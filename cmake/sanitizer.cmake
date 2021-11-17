@@ -1,7 +1,7 @@
 include(CheckCXXCompilerFlag)
 include(CheckCXXSourceRuns)
 
-set(ALLOWED_BUILD_TYPES Debug Release RelWithDebInfo MinSizeRel)
+set(ALLOWED_BUILD_TYPES Debug debug Release release RelWithDebInfo MinSizeRel)
 set(ALL_SAN_FLAGS "")
 
  # No sanitizers when cross compiling to prevent stuff like this: https://github.com/whoshuu/cpr/issues/582
